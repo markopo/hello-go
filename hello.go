@@ -11,5 +11,9 @@ func main() {
 }
 
 func helloWorld(i int) {
-	fmt.Printf("hello, world: %d.\n", i)
+	if(i %2 == 0) {
+		fmt.Printf("hello, world: %d.\n", i)
+	} else {
+		fmt.Printf("Goodbye: %d \n", i)
+	}
 }
