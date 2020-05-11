@@ -15,7 +15,12 @@ func main() {
 func randomNumber(i int) {
 	r := rand.Intn(100)
 	sum := i * r
-	fmt.Printf("Random number: %d : %d : %d \n", i, r, sum)
+	_, e := fmt.Printf("Random number: %d : %d : %d \n", i, r, sum)
+
+	if (e != nil) {
+		fmt.Println(e)
+	}
+
 }
 
 func helloWorld(i int) {
