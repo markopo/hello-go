@@ -5,12 +5,19 @@ import ("fmt"
 
 func main() {
 
+
 	for i := 0; i < 10; i++ {
 		helloWorld(i)
 		randomNumber(i)
+		x := "Hello! "
+		fmt.Printf("TYPE 1: %T  %d \n", i, i)
+		fmt.Printf("TYPE 2: %T %s \n", x, x)
+		even := i % 2 == 0
+		fmt.Printf("TYPE 3: %T %t \n", even, even)
 	}
 
 }
+
 
 func randomNumber(i int) {
 	r := rand.Intn(100)
