@@ -3,8 +3,16 @@ package main
 import ("fmt"
 		"math/rand")
 
+var msg = ` HELLO GOLANG!
+  - coding
+  - typing
+  - exploring
+`
+
+
 func main() {
 
+	fmt.Println(msg);
 
 	for i := 0; i < 10; i++ {
 		helloWorld(i)
