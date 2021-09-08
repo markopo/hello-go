@@ -1,7 +1,8 @@
 package main
 
 import ("fmt"
-		"math/rand")
+		"math/rand"
+		"strconv")
 
 var msg = ` HELLO GOLANG!
   - coding
@@ -14,15 +15,25 @@ func main() {
 
 	fmt.Println(msg);
 
-	for i := 0; i < 10; i++ {
-		helloWorld(i)
-		randomNumber(i)
-		x := "Hello! "
-		fmt.Printf("TYPE 1: %T  %d \n", i, i)
-		fmt.Printf("TYPE 2: %T %s \n", x, x)
-		even := i % 2 == 0
-		fmt.Printf("TYPE 3: %T %t \n", even, even)
+	str := "";
+	num := 1
+
+	for i := 0; i < 9; i++ {
+		str += "hej: " + strconv.Itoa(num) + " \n"
+		num += 1
 	}
+
+	fmt.Println(str)
+
+	// for i := 0; i < 10; i++ {
+	// 	// helloWorld(i)
+	// 	// randomNumber(i)
+	// 	x := "Hello! "
+	// 	fmt.Printf("TYPE 1: %T  %d \n", i, i)
+	// 	fmt.Printf("TYPE 2: %T %s \n", x, x)
+	// 	even := i % 2 == 0
+	// 	fmt.Printf("TYPE 3: %T %t \n", even, even)
+	// }
 
 }
 
